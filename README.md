@@ -1,4 +1,4 @@
-# googletranslateselection script
+# Google Translate + DeepL selection scripts
 
 These are extremely simple shell scripts that open a new Google Translate or DeepL tab
 in the default web browser showing the translation for the current selected text
@@ -7,15 +7,21 @@ This new version preserves line breaks, thus improving the quality of presentati
 
 
 These scripts require *xsel*, which can be installed via *apt* :
+
 *sudo apt update && sudo apt install xsel*
 
+
 To use them, simply move scripts into */usr/local/bin/* folder :
-*sudo mv googletranslate /usr/local/bin/
-sudo mv deepl /usr/local/bin/*
+
+*sudo mv googletranslate /usr/local/bin/*
+
+*sudo mv deepl /usr/local/bin/*
 
 To change translation language, replace "pt" with the code of the desired language after checking that it is accepted by Google Translate or DeepL :
-*gedit /usr/local/bin/deepl
-gedit /usr/local/bin/googletranslate*
+
+*gedit /usr/local/bin/deepl*
+
+*gedit /usr/local/bin/googletranslate*
 
 You can then link the command to a keyboard shortcut of your
 choice.
