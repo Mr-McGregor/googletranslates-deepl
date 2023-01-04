@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+text="$(xsel -o)"
+text="${text//$'\n'/%0A}"
+x-www-browser "https://www.deepl.com/translator#auto/fr/$text"
