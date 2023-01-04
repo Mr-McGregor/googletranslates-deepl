@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 text="$(xsel -o)"
+text="${text//$'\n'/%0A}"
 x-www-browser "https://translate.google.com/#auto/pt/$text"
